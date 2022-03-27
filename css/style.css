@@ -1,0 +1,99 @@
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap");
+
+:root {
+  --primary-color: rgb(26, 26, 26);
+  --secondary-color: rgb(245, 245, 245);
+  --font-family: Nunito, sans-serif;
+  --box-shadow: rgb(0, 0, 0) 1px 1px 3px 0px inset,
+    rgba(48, 48, 48, 0.5) -1px -1px 3px 1px inset;
+  --all-transition: transform ease-in-out 0.3s 0s;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-family);
+  color: var(--secondary-color);
+}
+
+.main-content {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 550px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 5px;
+  background-color: var(--primary-color);
+  padding: 5px;
+}
+
+.container > h1 {
+  width: 100%;
+  text-align: center;
+  margin-top: 5px;
+  padding: 5px;
+}
+
+.inputs-container {
+  width: 100%;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.inputs-container > label {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 8px 0;
+  padding: 5px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.inputs-container > label > input {
+  width: 250px;
+  height: 35px;
+  border-radius: 5px;
+  border: none;
+  color: var(--secondary-color);
+  background-color: var(--primary-color);
+  box-shadow: var(--box-shadow);
+  margin-left: 15px;
+  padding-left: 15px;
+}
+
+.container > p {
+  margin-bottom: 10px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+  cursor: pointer;
+  transition: var(--all-transition);
+}
+
+/* NTh CHILD */
+.inputs-container > label > input::placeholder {
+  color: var(--secondary-color);
+}
+
+/* Animations */
+.container > p:hover {
+  transform: scale(1.2);
+}

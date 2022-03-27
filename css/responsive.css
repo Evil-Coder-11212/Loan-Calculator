@@ -1,0 +1,20 @@
+@media screen and (max-width: 585px) {
+  .container {
+    width: 95%;
+  }
+
+  .inputs-container > label {
+    flex-direction: column;
+  }
+
+  .inputs-container > label > input {
+    margin: 0;
+    margin-top: 15px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .inputs-container > label > input {
+    width: 95%;
+  }
+}
