@@ -22,6 +22,7 @@
               id="amount-input"
               autocomplete="billing"
               placeholder="Enter loan amount"
+              class="inputs"
               autofocus
             />
           </label>
@@ -33,21 +34,27 @@
               id="interest-rate-input"
               autocomplete="billing"
               placeholder="Enter Interest Rate"
+              class="inputs"
             />
           </label>
           <label for="months-input">
-            Months to Pay:
+            Year to Pay:
             <input
               type="number"
               name="months-input"
               id="months-input"
               autocomplete="billing"
               placeholder="Enter Months to Pay "
+              class="inputs"
             />
           </label>
         </div>
         <p id="result">0</p>
       </div>
+      <select name="currency" id="currency">
+        <option value="dollar">Dollar</option>
+        <option value="ruppes">Ruppes</option>
+      </select>
     </div>
     <script src="js/main.js"></script>
     <!-- JS -->
