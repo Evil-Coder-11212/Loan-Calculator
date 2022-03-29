@@ -1,5 +1,5 @@
 # [Loan Calculator](https://evil-coder-11212.github.io/Loan-Calculator/)
-Stop watch is an web appilcation build with pure HTML, CSS, JS
+Loan Calculator is an web appilcation build with pure HTML, CSS, JS
 
 ## About Me
 I am a regular coder with a bit of gaming.<br/>
